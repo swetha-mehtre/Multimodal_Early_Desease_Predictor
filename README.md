@@ -212,8 +212,9 @@ See the LICENSE file for complete details.
 
 ## Contact
 
-For questions or support, please refer to the project documentation or create an issue in the repository. 
-
+For questions or support : please refer to the project documentation or create an issue in the repository 
+   >  Connect via linkedin 
+- 🔗 [SwethaMehtre](https://www.linkedin.com/in/swetha-mehtre-6619442a9/)
 
 ## 🌟 Support the Project
 
@@ -223,27 +224,13 @@ For questions or support, please refer to the project documentation or create an
 
 ---
 
-## 🤝 Team Members
-
-This is a collaborative major project developed by our dedicated team:
-
-- 👩‍💻 **Mihira Puja**  
-  🔗 [Multimodal Disease Detection ~Mihira Puja](https://github.com/mihira0512/Multimodal-disease-detection.git)
-
-- 👩‍💻 **Niharika S Ravi**  
-  🔗 [Multimodal Ai Early Disease Detection ~Niharika S Ravi](https://github.com/qwer510/multimodal-ai-early-disease-detection.git)
-
-- 👩‍💻 **Nagabhushana Raju S**  
-  🔗 [Early_Desease_Predictor ~NagabhushanaRajuS](https://github.com/Nagabhushanaraju/Early_Desease_Predictor)
-----
 
 ## Thank You 😊
-
-~ Thanks for visiting this repository!  
+    Thanks for visiting this repository!  
 
 Feel free to star ⭐ the project, give feedback, or contribute.
 
 
-> For queries, collaborations, or suggestions — feel free to open an issue or pull request! 👍
+> Iam Open For { queries, collaborations, or suggestions } — feel free to open an issue or pull request! 👍
 
 
