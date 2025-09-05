@@ -1,6 +1,8 @@
-# Disease Prediction System
+# Disease Prediction Tool 
 
-AI-powered web application for disease prediction using machine learning.
+
+An AI-powered web application for early disease detection using patient symptoms.  
+Built with **Python**, **Flask**, and **scikit-learn**, this system leverages machine learning models to predict potential diseases based on user-input symptoms.
 
 ## Setup
 
@@ -14,8 +16,10 @@ pip install -r requirements.txt
 python app.py
 ```
 
-3. Open http://localhost:5000 in your browser
-
+3. Open
+```bash
+ http://localhost:5000 #in your browser
+   ```
 ## Features
 
 - Random Forest classifier with 97.6% accuracy
@@ -30,12 +34,30 @@ python app.py
 
 ## Files
 
-- `app.py` - Flask application
-- `templates/index.html` - Main template
-- `static/style.css` - Styling
-- `static/script.js` - Functionality
-- `Training.csv` - Training data
-- `Testing.csv` - Test data
+| File/Folder                | Description                          |
+| -------------------------- | ------------------------------------ |
+| `app.py`                   | Main Flask application               |
+| `diagnose_issue.py`        | Helper script for diagnosis logic    |
+| `disease_model.pkl`        | Trained ML model                     |
+| `disease-prediction.ipynb` | Notebook for prediction workflow     |
+| `label_encoder.pkl`        | Encoded labels for symptoms/diseases |
+| `model.ipynb`              | Model training notebook              |
+| `symptom_names.pkl`        | Pickle of symptom names              |
+| `Training.csv`             | Dataset for model training           |
+| `Testing.csv`              | Dataset for testing                  |
+| `submission.csv`           | (Optional) Output file               |
+| `requirements.txt`         | Project dependencies                 |
+| `LICENSE`                  | License file                         |
+| `README.md`                | Project documentation (this file)    |
+| `.gitignore`               | Git ignored files list               |
+| `.DS_Store`                | macOS system file (can be deleted)   |
+| `templates/index.html`     | Frontend HTML template               |
+| `static/style.css`         | CSS styling                          |
+| `static/script.js`         | JavaScript functionality             |
+| `uploads/`                 | Folder for user uploads              |
+| `learnings/`               | Optional experiments/notes           |
+| `diseaseenv/`              | Virtual environment (ignored in Git) |
+
 
 ## Technology Stack
 
@@ -46,31 +68,35 @@ python app.py
 - **Icons**: Font Awesome
 - **Data Processing**: pandas, numpy
 
-## Installation
+##  Installation
 
-1. **Clone or download the project files**
+- **Set up a virtual environment using Conda (recommended):**
 
-2. **Ensure you have the required data files**:
-   - `Training.csv` - Training dataset with symptoms and diseases
-   - `Testing.csv` - Testing dataset
+  ```bash
+  conda create -n diseaseenv python=3.11
+  conda activate diseaseenv
+- **Install Git (if not already installed):**
 
-## Usage
+- >Download Git
+  ```bash
+  https://git-scm.com/downloads #visit this page & install according to ur OS
 
-1. **Start the application**:
-   ```bash
-   python app.py
+- Clone the repository: open CMD(Command Prompt) & paste this command's listed below 
+   >
+  ```bash
+    mkdir Early_Desease_Predictor_bySwethaMehtre
+    cd Early_Desease_Predictor_bySwethaMehtre
+    git clone https://github.com/swetha-mehtre/Multimodal_Early_Desease_Predictor.git
+    cd Multimodal_Early_Desease_Predictor  
+
+- Install required dependencies inside the virtual environment:
+      >
+  ```bash
+     pip install -r requirements.txt
+
    ```
 
-2. **Open your web browser** and navigate to:
-   ```
-   http://localhost:5000
-   ```
 
-3. **Select symptoms** from the interactive grid
-
-4. **Click "Predict Disease"** to get instant results
-
-5. **View predictions** with confidence scores and alternative conditions
 
 ## How It Works
 
@@ -89,26 +115,45 @@ python app.py
 
 ## Important Disclaimer
 
-⚠️ **This tool is for educational purposes only.**
+⚠️ **This tool is currently for educational/testing  purposes only.**
 
 - The predictions are based on machine learning algorithms and should not replace professional medical advice
 - Always consult with qualified healthcare professionals for proper diagnosis and treatment
 - The system is designed as a learning tool and demonstration of AI capabilities
+- We r comming up with more advanced multimodal Algorithm's & DeepLearning LLM's to bring this to a real life ready product
+- Stay tuned for update's ! 
 
 ## File Structure
 
 ```
-DISEASE PREDICTION/
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── README.md             # This file
-├── Training.csv          # Training dataset
-├── Testing.csv           # Testing dataset
+D:\SwethaMehtre_MIT_Proj\Multi_Modal_Early_DISEASEPREDICTIOR
+ \> tree 
+Multi_Modal_Early_DISEASEPREDICTIOR/
+├── app.py                     # Main Flask application
+├── diagnose_issue.py          # Script for issue diagnosis
+├── disease_model.pkl          # Trained ML model (Pickle file)
+├── disease-prediction.ipynb   # Jupyter notebook for prediction logic
+├── label_encoder.pkl          # Encoder for symptoms/diseases
+├── model.ipynb                # Model training & analysis notebook
+├── symptom_names.pkl          # Symptom names pickle file
+├── Training.csv               # Training dataset
+├── Testing.csv                # Testing dataset
+├── submission.csv             # Optional submission/testing file
+├── tempCodeRunnerFile.py      # Temporary VS Code runner file
+├── requirements.txt           # Project dependencies
+├── LICENSE                    # Project license info
+├── README.md                  # Project documentation (this file)
+├── .gitignore                 # Git ignore rules
+├── .DS_Store                  # macOS system file (can be ignored/deleted)
+├── static/                    # Folder for static assets
+│   ├── style.css              # Custom CSS styles
+│   └── script.js              # JavaScript functions
 ├── templates/
-│   └── index.html        # Main HTML template
-└── static/
-    ├── style.css         # Custom CSS styles
-    └── script.js         # JavaScript functionality
+│   └── index.html             # HTML frontend template
+├── uploads/                   # Folder to store uploaded files
+├── learnings/                 # (Optional) Folder for experiments/notes
+└── diseaseenv/                # Local virtual environment (should be ignored in Git)
+
 ```
 
 ## Customization
@@ -159,8 +204,46 @@ Feel free to contribute to this project by:
 
 ## License
 
-This project is for educational purposes. Please ensure compliance with local regulations regarding medical software.
+This project is licensed under the MIT License.
+See the LICENSE file for complete details.
+
+⚠️ Disclaimer: This project is intended for educational and research purposes only. It must not be used for real-world medical diagnosis or treatment without proper certification and regulatory approval. Please ensure compliance with local laws and medical data regulations when using or modifying this software.
+
 
 ## Contact
 
 For questions or support, please refer to the project documentation or create an issue in the repository. 
+
+
+## 🌟 Support the Project
+
+ don't forget to **⭐ Star** the repo — If you find this project useful ! 
+
+> Every star helps us reach more developers, researchers, and healthcare innovators 🌐.
+
+---
+
+## 🤝 Team Members
+
+This is a collaborative major project developed by our dedicated team:
+
+- 👩‍💻 **Mihira Puja**  
+  🔗 [Multimodal Disease Detection ~Mihira Puja](https://github.com/mihira0512/Multimodal-disease-detection.git)
+
+- 👩‍💻 **Niharika S Ravi**  
+  🔗 [Multimodal Ai Early Disease Detection ~Niharika S Ravi](https://github.com/qwer510/multimodal-ai-early-disease-detection.git)
+
+- 👩‍💻 **Nagabhushana Raju S**  
+  🔗 [Early_Desease_Predictor ~NagabhushanaRajuS](https://github.com/Nagabhushanaraju/Early_Desease_Predictor)
+----
+
+## Thank You 😊
+
+~ Thanks for visiting this repository!  
+
+Feel free to star ⭐ the project, give feedback, or contribute.
+
+
+> For queries, collaborations, or suggestions — feel free to open an issue or pull request! 👍
+
+
